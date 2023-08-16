@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Local\Converters\" />
+    <Folder Include="Local\Helpers\" />
+    <Folder Include="Local\Models\" />
+    <Folder Include="Local\" />
+    <Folder Include="Themes\Units\" />
+  </ItemGroup>
+
+</Project>
