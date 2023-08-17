@@ -1,9 +1,9 @@
-﻿using Jamesnet.Wpf.Controls;
+﻿using Paris.Support.UI.Units;
 using System.Windows;
 
 namespace Paris.Forms.UI.Views
 {
-    public class ParisWindow : JamesWindow
+    public class ParisWindow : SeineWindow
     {
         static ParisWindow()
         {

@@ -1,4 +1,5 @@
 ﻿using Jamesnet.Wpf.Controls;
+using Paris.Forms.UI.Views;
 using System.Windows;
 
 namespace Paris
@@ -7,7 +8,7 @@ namespace Paris
     {
         protected override Window CreateShell()
         {
-            return new Window();
+            return new ParisWindow();
         }
     }
 }

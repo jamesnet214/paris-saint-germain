@@ -11,7 +11,10 @@
     <Folder Include="Local\Helpers\" />
     <Folder Include="Local\Models\" />
     <Folder Include="Local\" />
-    <Folder Include="Themes\Units\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Jamesnet.Wpf" Version="1.0.0.33" />
   </ItemGroup>
 
 </Project>
