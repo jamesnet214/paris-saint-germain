@@ -12,9 +12,11 @@
                             BorderThickness="{TemplateBinding BorderThickness}">
                         <igDock:XamDockManager x:Name="dockManager" Theme="RoyalLight"
                                                Background="Transparent">
+                            <igDock:XamDockManager.Resources>
+                            </igDock:XamDockManager.Resources>
                             <igDock:DocumentContentHost Background="Transparent">
                                 <igDock:SplitPane>
-                                    <igDock:TabGroupPane>
+                                    <igDock:TabGroupPane Background="Transparent">
                                         <igDock:ContentPane x:Name="document1" Header="Amazon"
                                                             Background="Transparent">
                                         </igDock:ContentPane>
@@ -24,8 +26,8 @@
 
                             <igDock:XamDockManager.Panes>
                                 <igDock:SplitPane igDock:XamDockManager.InitialLocation="DockedRight"
-                                                  SplitterOrientation="Horizontal" Width="220"
-                                                  >
+                                                  SplitterOrientation="Horizontal" 
+                                                  Width="220">
                                     <igDock:TabGroupPane>
                                         <igDock:ContentPane x:Name="rightEdgeDock" Header="Google"
                                                             Background="Transparent"
@@ -33,29 +35,37 @@
                                                             PinButtonVisibility="Visible"
                                                             WindowPositionMenuVisibility="Visible">
                                         </igDock:ContentPane>
-                                        <igDock:ContentPane x:Name="rightEdgeTeamDock" Header="Apple"
-                                        CloseButtonVisibility="Visible"
-                                        PinButtonVisibility="Visible"
-                                        WindowPositionMenuVisibility="Visible">
+                                        <igDock:ContentPane x:Name="rightEdgeTeamDock" 
+                                                            Header="Apple"
+                                                            Background="Transparent"
+                                                            CloseButtonVisibility="Visible"
+                                                            PinButtonVisibility="Visible"
+                                                            WindowPositionMenuVisibility="Visible">
                                         </igDock:ContentPane>
                                     </igDock:TabGroupPane>
-                                    <igDock:ContentPane x:Name="rightEdgePropertiesDock" Header="Microsoft"
-                                        CloseButtonVisibility="Visible"
-                                        PinButtonVisibility="Visible"
-                                        WindowPositionMenuVisibility="Visible">
+                                    <igDock:ContentPane x:Name="rightEdgePropertiesDock" 
+                                                        Header="Microsoft"
+                                                            Background="Transparent"
+                                                        CloseButtonVisibility="Visible"
+                                                        PinButtonVisibility="Visible"
+                                                        WindowPositionMenuVisibility="Visible">
                                     </igDock:ContentPane>
                                 </igDock:SplitPane>
                                 <igDock:SplitPane igDock:XamDockManager.InitialLocation="DockedBottom">
                                     <igDock:TabGroupPane>
-                                        <igDock:ContentPane x:Name="bottomEdgeDock1" IsPinned="False" Header="Disney"
-                                        CloseButtonVisibility="Visible"
-                                        PinButtonVisibility="Visible"
-                                        WindowPositionMenuVisibility="Visible">
+                                        <igDock:ContentPane x:Name="bottomEdgeDock1" 
+                                                            Background="Transparent"
+                                                            IsPinned="False" Header="Disney"
+                                                            CloseButtonVisibility="Visible"
+                                                            PinButtonVisibility="Visible"
+                                                            WindowPositionMenuVisibility="Visible">
                                         </igDock:ContentPane>
-                                        <igDock:ContentPane x:Name="bottomEdgeDock2" Header="Netflix"
-                                        CloseButtonVisibility="Visible"
-                                        PinButtonVisibility="Visible"
-                                        WindowPositionMenuVisibility="Visible">
+                                        <igDock:ContentPane x:Name="bottomEdgeDock2" 
+                                                            Header="Netflix"
+                                                            Background="Transparent"
+                                                            CloseButtonVisibility="Visible"
+                                                            PinButtonVisibility="Visible"
+                                                            WindowPositionMenuVisibility="Visible">
                                         </igDock:ContentPane>
                                     </igDock:TabGroupPane>
                                 </igDock:SplitPane>
