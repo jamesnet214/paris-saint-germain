@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Paris.Properties;
+using System;
 
 namespace Paris
 {
@@ -7,7 +8,10 @@ namespace Paris
         [STAThread]
         private static void Main(string[] args)
         {
-            _ = new App().Run();
+            _ = new App()
+                .AddInversionModule<ViewModules>()
+                .AddWireDataContext<WireDataContext>()
+                .Run();
         }
     }
 }

@@ -13,6 +13,16 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Paris.Forms\Paris.Forms.csproj" />
+    <ProjectReference Include="..\Paris.Main\Paris.Main.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="InfragisticsWPF4.DockManager.v23.1">
+      <HintPath>..\..\..\..\Program Files (x86)\Infragistics\2023.1\WPF\CLR4.0\Bin\InfragisticsWPF4.DockManager.v23.1.dll</HintPath>
+    </Reference>
+    <Reference Include="InfragisticsWPF4.v23.1">
+      <HintPath>..\..\..\..\Program Files (x86)\Infragistics\2023.1\WPF\CLR4.0\Bin\InfragisticsWPF4.v23.1.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

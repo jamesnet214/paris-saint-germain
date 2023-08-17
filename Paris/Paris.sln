@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paris.Forms", "Paris.Forms\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paris.Support", "Paris.Support\Paris.Support.csproj", "{EECFE5BD-D3A2-47C6-A2DD-6C6095C0D3B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paris.Main", "Paris.Main\Paris.Main.csproj", "{EEE659E6-1420-4019-A5EA-F3CD93B96C18}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{EECFE5BD-D3A2-47C6-A2DD-6C6095C0D3B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EECFE5BD-D3A2-47C6-A2DD-6C6095C0D3B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EECFE5BD-D3A2-47C6-A2DD-6C6095C0D3B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEE659E6-1420-4019-A5EA-F3CD93B96C18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEE659E6-1420-4019-A5EA-F3CD93B96C18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEE659E6-1420-4019-A5EA-F3CD93B96C18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEE659E6-1420-4019-A5EA-F3CD93B96C18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

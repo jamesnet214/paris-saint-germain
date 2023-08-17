@@ -1,13 +1,14 @@
 <ResourceDictionary
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:james="clr-namespace:Jamesnet.Wpf.Controls;assembly=Jamesnet.Wpf"
     xmlns:based="clr-namespace:Paris.Support.UI.Units;assembly=Paris.Support"
     xmlns:views="clr-namespace:Paris.Forms.UI.Views">
     <Style TargetType="{x:Type views:ParisWindow}"
            BasedOn="{StaticResource {x:Type based:SeineWindow}}">
         <Setter Property="Content">
             <Setter.Value>
-                <TextBlock Text="OK"/>
+                <james:JamesRegion RegionName="MainRegion"/>
             </Setter.Value>
         </Setter>
     </Style>

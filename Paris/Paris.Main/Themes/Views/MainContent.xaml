@@ -1,0 +1,69 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:igDock="http://schemas.infragistics.com/xaml/wpf"
+    xmlns:views="clr-namespace:Paris.Main.Views">
+    <Style TargetType="{x:Type views:MainContent}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type views:MainContent}">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}">
+                        <igDock:XamDockManager x:Name="dockManager" Theme="RoyalLight"
+                                               Background="Transparent">
+                            <igDock:DocumentContentHost Background="Transparent">
+                                <igDock:SplitPane>
+                                    <igDock:TabGroupPane>
+                                        <igDock:ContentPane x:Name="document1" Header="Amazon"
+                                                            Background="Transparent">
+                                        </igDock:ContentPane>
+                                    </igDock:TabGroupPane>
+                                </igDock:SplitPane>
+                            </igDock:DocumentContentHost>
+
+                            <igDock:XamDockManager.Panes>
+                                <igDock:SplitPane igDock:XamDockManager.InitialLocation="DockedRight"
+                                                  SplitterOrientation="Horizontal" Width="220"
+                                                  >
+                                    <igDock:TabGroupPane>
+                                        <igDock:ContentPane x:Name="rightEdgeDock" Header="Google"
+                                                            Background="Transparent"
+                                                            CloseButtonVisibility="Visible"
+                                                            PinButtonVisibility="Visible"
+                                                            WindowPositionMenuVisibility="Visible">
+                                        </igDock:ContentPane>
+                                        <igDock:ContentPane x:Name="rightEdgeTeamDock" Header="Apple"
+                                        CloseButtonVisibility="Visible"
+                                        PinButtonVisibility="Visible"
+                                        WindowPositionMenuVisibility="Visible">
+                                        </igDock:ContentPane>
+                                    </igDock:TabGroupPane>
+                                    <igDock:ContentPane x:Name="rightEdgePropertiesDock" Header="Microsoft"
+                                        CloseButtonVisibility="Visible"
+                                        PinButtonVisibility="Visible"
+                                        WindowPositionMenuVisibility="Visible">
+                                    </igDock:ContentPane>
+                                </igDock:SplitPane>
+                                <igDock:SplitPane igDock:XamDockManager.InitialLocation="DockedBottom">
+                                    <igDock:TabGroupPane>
+                                        <igDock:ContentPane x:Name="bottomEdgeDock1" IsPinned="False" Header="Disney"
+                                        CloseButtonVisibility="Visible"
+                                        PinButtonVisibility="Visible"
+                                        WindowPositionMenuVisibility="Visible">
+                                        </igDock:ContentPane>
+                                        <igDock:ContentPane x:Name="bottomEdgeDock2" Header="Netflix"
+                                        CloseButtonVisibility="Visible"
+                                        PinButtonVisibility="Visible"
+                                        WindowPositionMenuVisibility="Visible">
+                                        </igDock:ContentPane>
+                                    </igDock:TabGroupPane>
+                                </igDock:SplitPane>
+                            </igDock:XamDockManager.Panes>
+                        </igDock:XamDockManager>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
